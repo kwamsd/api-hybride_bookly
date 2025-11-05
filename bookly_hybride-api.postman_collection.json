@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "051b2b6f-8ce8-4ad9-ac29-5b4f9892676b",
+		"name": "bookly_hybride-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39026092"
+	},
+	"item": [
+		{
+			"name": "get profile 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"playerId\": 2,\n  \"preferences\": [\"QB\", \"offense\"],\n  \"history\": [\n    { \"match\": \"demi-finale playoff 024\", \"rating\": 5 }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/profiles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"profiles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET profile 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"playerId\": 2,\n  \"preferences\": [\"QB\", \"offense\"],\n  \"history\": [\n    { \"match\": \"demi-finale playoff 024\", \"rating\": 5 }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/profiles/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"profiles",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET player full 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"playerId\": 2,\n  \"preferences\": [\"QB\", \"offense\"],\n  \"history\": [\n    { \"match\": \"demi-finale playoff 024\", \"rating\": 5 }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/player-full/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"player-full",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET player full 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"playerId\": 2,\n  \"preferences\": [\"QB\", \"offense\"],\n  \"history\": [\n    { \"match\": \"demi-finale playoff 024\", \"rating\": 5 }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/player-full/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"player-full",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET teams",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"playerId\": 2,\n  \"preferences\": [\"QB\", \"offense\"],\n  \"history\": [\n    { \"match\": \"demi-finale playoff 024\", \"rating\": 5 }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/teams/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"teams",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creation d'une team",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"miami dolphins\",\n    \"city\": \"miami\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/teams/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"teams",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creation d'un joueur",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"tua tagovailoa\",\n  \"position\": \"QB\",\n  \"team_id\": 3\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creation d'un profil",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"playerId\": 3,\n  \"preferences\": [\"QB\", \"offense\"],\n  \"history\": [\n    { \"match\": \"blind joueur\", \"rating\": 2 }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/profiles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "récupération des infos du joueurs complets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"playerId\": 2,\n  \"preferences\": [\"QB\", \"offense\"],\n  \"history\": [\n    { \"match\": \"demi-finale playoff 024\", \"rating\": 5 }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/player-full/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"player-full",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
